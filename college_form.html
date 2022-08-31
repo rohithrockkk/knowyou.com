@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head><title>College form</title></head>
+    <script type="text/javascript">
+          function msg(number)
+          {
+              var name=document.getElementById("name").value;
+              alert(number+" form is submitted"+" "+name);
+              
+          }
+        //   prompt("enter your state?");
+
+        // var firstname="rohith";
+        // console.log(firstname.length);
+
+        // var name="Varshith";
+        // firstletterofname=name[0];
+        // console.log(firstletterofname);
+
+        // var myarray=[[1,2,3],[4,5,6],[7,8,9],[[10,11,12],13,14]];
+        // console.log(myarray[2][0]);
+
+        var ourarray=[1,2,3];
+        var removedfromourarray=ourarray.pop();
+        console.log(ourarray);
+        console.log(removedfromourarray);
+
+        var ourarray=[1,2,3];
+        var removedbyshift=ourarray.shift();
+        console.log(ourarray);
+        console.log(removedbyshift);
+
+        </script>
+    <body align="center">
+        <u><h2>COLLEGE FORM</h2></u>
+        <hr>
+        <div><strong>Name:</strong><input  id="name" type="text" placeholder="enter your name"/></div>
+        <div><strong>Email address:</strong><input type="email" placeholder="enter your email"/></div>
+        <div><strong>Date of birth:</strong><input type="date" placeholder="D-O-B"/></div>
+        <hr>
+        <input type="button" value="submit" onclick="msg(1)"/>
+    </body>
+</html>
